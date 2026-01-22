@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./style/swiper.min.css">
         <link rel="stylesheet" href="./style/animation.css">
         <link rel="stylesheet" href="./style/customBoard.css">
+      
         <!--스크립트-->
         <script type="text/javascript" src="./script/script.js"></script>
         <script type="text/javascript" src="./script/swiper.min.js"></script>
@@ -21,6 +22,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+        <!-- fullPage.js / css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.js"></script>
     </head>
     <body>
         <!-- 헤더 { -->
@@ -35,103 +39,297 @@
             </div>
         </header>
         <!-- } 헤더 끝 -->
-        <main id="smooth-wrapper">
-            <article id="smooth-content">
-                
-                <br/><br/><br/><br/><br/><br/>
-                <br/><br/><br/><br/><br/><br/>
+        <!-- 우측 슬라이드 메뉴 { -->
+        <section class="slide-menu">
+            <div class="btn-div">
+                <button type="button" class="close-btn">
+                    <img src="./img/common/close-icon.svg" alt="close" class="icon">
+                </button>
+            </div>
+            <div class="menu-div">
+                <div class="title-item">굿플랜 소개</div>
+                <div class="sub-item"><a href="./sub1_1.html">법무법인 소개</a></div>
+                <div class="sub-item"><a href="./sub1_2.html">구성원</a></div>
+                <div class="sub-item"><a href="./sub1_3.html">오시는길</a></div>
 
-                <!--플로팅 메뉴 { -->
-                <div class="floating-menu">
-                    <ul class="menu-list">
-                        <li>
-                            <a href="#">
-                                <img src="./img/floating/icon1.png" alt="전화" class="icon">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./img/floating/icon2.png" alt="1:1" class="icon">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./img/floating/icon3.png" alt="chat" class="icon">
-                            </a>
-                        </li>
-                    </ul>
+                <div class="title-item">주요업무</div>
+                <div class="sub-item"><a href="./sub2_1.html">형사</a></div>
+                <div class="sub-item"><a href="./sub2_2.html">부동산</a></div>
+                <div class="sub-item"><a href="./sub2_3.html">이혼  · 상속</a></div>
+                <div class="sub-item"><a href="./sub2_4.html">손해배상  · 대여금</a></div>
+                <div class="sub-item"><a href="./sub2_5.html">재개발 · 재건축  </a></div>
+                <div class="sub-item"><a href="./sub2_6.html">회생 · 파산</a></div>
+                <div class="sub-item"><a href="./sub2_7.html">조세 · 행정</a></div>
+                <div class="sub-item"><a href="./sub2_8.html">가상자산</a></div>
+                <div class="sub-item"><a href="./sub2_9.html">자문</a></div>
+
+                <div class="title-item">커뮤니티</div>
+                <div class="sub-item"><a href="./sub3_1.html">성공사례</a></div>
+                <div class="sub-item"><a href="./sub3_2.html">언론보도</a></div>
+                <div class="sub-item"><a href="./sub3_3.html">소식</a></div>
+                <div class="sub-item"><a href="./sub3_4.html">전문 칼럼</a></div>
+
+                <div class="title-item">상담신청</div>
+                <div class="sub-item"><a href="./sub4_1.html">상담신청</a></div>
+            </div>
+        </section>
+        <!-- } 우측 슬라이드 메뉴-->
+        
+
+        <div class="main" id="fullpage">
+            <div class="section section1">
+                <div class="inner">
+                    <h1>
+                        사건을 맡기기 전에,<br/>
+                        <b>해결의 방향부터 설계합니다.</b>
+                    </h1>
+                    <div class="scroll-div">
+                        SCROLL
+                        <img src="./img/main/section1/scroll-down.svg" alt="아래로" class="icon" />
+                    </div>
                 </div>
-                <!-- } 플로팅 메뉴 끝 -->
-                <!-- 푸터 시작 { -->
-                 <footer>
-                    <div class="inner">
-                        <div class="box1">
-                            <img src="./img/common/footer-logo.svg" alt="법무법인 굿플랜" class="logo">
+            </div>
+            <div class="section section2 fp-auto-height-responsive">
+                <div class="inner">
+                    <div class="left-content">
+                        <h2>
+                            <div class="title-bar"></div>
+                            <div class="text">
+                                법의 흐름을 읽는 판단 <br class="mo-br"/><b>결과로 이어지는 변론</b>
+                            </div>
+                        </h2>
+                        <div class="content">
+                            <img src="./img/main/section2/icon.png" alt="law" class="icon" />
+                            <div class="text">
+                                대표변호사 <b>오규성</b>
+                            </div>
                         </div>
-                        <div class="box2">
-                            <ul class="info-list">
-                                <li>
-                                    <div class="label">전화</div>
-                                    <div class="content">대표번호 : 1800-6490</div>
-                                </li>
-                                <li>
-                                    <div class="label">E-mail</div>
-                                    <div class="content">ask@goodplan.kr</div>
-                                </li>
-                                <li>
-                                    <div class="label">사업자등록번호</div>
-                                    <div class="content">890-87-01999</div>
-                                </li>
-                                <li>
-                                    <div class="label">대표변호사</div>
-                                    <div class="content">오규성, 김가람</div>
-                                </li>
-                                <li>
-                                    <div class="label">광고책임변호사</div>
-                                    <div class="content">김가람</div>
-                                </li>
-                                <li class="full">
-                                    <div class="label">주소</div>
-                                    <div class="half-div">
-                                        <div class="address-wrap">
-                                            <p class="address-list">
-                                                <span class="name">서초 주사무소</span>
-                                                <span class="address">서울특별시 서초구 서초중앙로24길 16, KM타워 5층T : 1800-6490F : 02-525-6489</span>
-                                            </p>
-                                            <p class="address-list">
-                                                <span class="name">수원 분사무소</span>
-                                                <span class="address">경기 수원시 영통구 광교중앙로 256 탑프라자 403호T : 031-213-6489F : 031-213-6488</span>
-                                            </p>
-                                            <p class="address-list">
-                                                <span class="name">목동 분사무소</span>
-                                                <span class="address">서울 양천구 신월로 387, 유앤미법조빌딩 103호ㆍ301호T: 02-2604-6489F: 02-2604-6488</span>
-                                            </p>
-                                            <p class="address-list">
-                                                <span class="name">부산 분사무소</span>
-                                                <span class="address">부산광역시 해운대구 APEC로 17, 센텀리더스마크 3702호T: 051-925-3702F: 051-926-3702</span>
-                                            </p>
-                                            <p class="address-list">
-                                                <span class="name">여주 분사무소</span>
-                                                <span class="address">경기 여주시 현암로 21-10 103호T: 031-884-1007F: 031-688-1057</span>
-                                            </p>
-                                            <p class="address-list">
-                                                <span class="name">천안 분사무소</span>
-                                                <span class="address">충청남도 천안시 동남구 청수14로 68 7층 703, 704호T: 041-555-6489F: 041-555-6490</span>
-                                            </p>
-                                            <p class="address-list">
-                                                <span class="name">청주 분사무소</span>
-                                                <span class="address">충청북도 청주시 서원구 산남로70번길 34, 신성미소시티블루1 504호T: 043-715-2005F: 043-715-2008</span>
-                                            </p>
-                                        </div>
-                                        <div class="copy-right">ⓒ Lawfirm GOODPLAN. All Rights Reserved.</div>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="more-btn-wrap">
+                            <a href="#" class="more-btn">MORE</a>
                         </div>
                     </div>
-                 </footer>
-                <!-- } 푸터 끝-->
-            </article>
-        </main>
+                    <img src="./img/main/section2/lawyer.png" alt="오규성 대표 변호사" class="lawyer-img" />
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="inner">
+                    <h2>
+                        <div class="title-bar"></div>
+                        <div class="text">
+                            <b>분야별 전담 시스템</b>으로 <br/>
+                            대응하는 주요 업무
+                        </div>
+                    </h2>
+
+                    <div class="slide-wrap">
+                        <div class="btn-wrap">
+                            <button type="button" class="pn-btn prev-btn">
+                                <img src="./img/main/section3/prev-btn.png" alt="이전" class="icon" />
+                            </button>
+                            <button type="button" class="pn-btn next-btn">
+                                <img src="./img/main/section3/next-btn.png" alt="다음" class="icon" />
+                            </button>
+                        </div>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="bar"></div>
+                                        <div class="subject">가사</div>
+                                        <div class="content">
+                                            감정이 아닌 기준과 결과로 정리 
+                                        </div>
+                                        <a href="#" class="more-btn">MORE</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="bar"></div>
+                                        <div class="subject">부동산</div>
+                                        <div class="content">
+                                            감정이 아닌 기준과 결과로 정리 
+                                        </div>
+                                        <a href="#" class="more-btn">MORE</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="bar"></div>
+                                        <div class="subject">부동산</div>
+                                        <div class="content">
+                                            감정이 아닌 기준과 결과로 정리 
+                                        </div>
+                                        <a href="#" class="more-btn">MORE</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="bar"></div>
+                                        <div class="subject">부동산</div>
+                                        <div class="content">
+                                            감정이 아닌 기준과 결과로 정리 
+                                        </div>
+                                        <a href="#" class="more-btn">MORE</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="bar"></div>
+                                        <div class="subject">부동산</div>
+                                        <div class="content">
+                                            감정이 아닌 기준과 결과로 정리 
+                                        </div>
+                                        <a href="#" class="more-btn">MORE</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="bar"></div>
+                                        <div class="subject">부동산</div>
+                                        <div class="content">
+                                            감정이 아닌 기준과 결과로 정리 
+                                        </div>
+                                        <a href="#" class="more-btn">MORE</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="bar"></div>
+                                        <div class="subject">부동산</div>
+                                        <div class="content">
+                                            감정이 아닌 기준과 결과로 정리 
+                                        </div>
+                                        <a href="#" class="more-btn">MORE</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="bar"></div>
+                                        <div class="subject">부동산</div>
+                                        <div class="content">
+                                            감정이 아닌 기준과 결과로 정리 
+                                        </div>
+                                        <a href="#" class="more-btn">MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section fp-auto-height">
+                <div class="slide">
+                    <!-- 푸터 시작 { -->
+                    <footer>
+                        <div class="inner">
+                            <div class="box1">
+                                <img src="./img/common/footer-logo.svg" alt="법무법인 굿플랜" class="logo">
+                            </div>
+                            <div class="box2">
+                                <ul class="info-list">
+                                    <li>
+                                        <div class="label">전화</div>
+                                        <div class="content">대표번호 : 1800-6490</div>
+                                    </li>
+                                    <li>
+                                        <div class="label">E-mail</div>
+                                        <div class="content">ask@goodplan.kr</div>
+                                    </li>
+                                    <li>
+                                        <div class="label">사업자등록번호</div>
+                                        <div class="content">890-87-01999</div>
+                                    </li>
+                                    <li>
+                                        <div class="label">대표변호사</div>
+                                        <div class="content">오규성, 김가람</div>
+                                    </li>
+                                    <li>
+                                        <div class="label">광고책임변호사</div>
+                                        <div class="content">김가람</div>
+                                    </li>
+                                    <li class="full">
+                                        <div class="label">주소</div>
+                                        <div class="half-div">
+                                            <div class="address-wrap">
+                                                <p class="address-list">
+                                                    <span class="name">서초 주사무소</span>
+                                                    <span class="address">서울특별시 서초구 서초중앙로24길 16, KM타워 5층T : 1800-6490F : 02-525-6489</span>
+                                                </p>
+                                                <p class="address-list">
+                                                    <span class="name">수원 분사무소</span>
+                                                    <span class="address">경기 수원시 영통구 광교중앙로 256 탑프라자 403호T : 031-213-6489F : 031-213-6488</span>
+                                                </p>
+                                                <p class="address-list">
+                                                    <span class="name">목동 분사무소</span>
+                                                    <span class="address">서울 양천구 신월로 387, 유앤미법조빌딩 103호ㆍ301호T: 02-2604-6489F: 02-2604-6488</span>
+                                                </p>
+                                                <p class="address-list">
+                                                    <span class="name">부산 분사무소</span>
+                                                    <span class="address">부산광역시 해운대구 APEC로 17, 센텀리더스마크 3702호T: 051-925-3702F: 051-926-3702</span>
+                                                </p>
+                                                <p class="address-list">
+                                                    <span class="name">여주 분사무소</span>
+                                                    <span class="address">경기 여주시 현암로 21-10 103호T: 031-884-1007F: 031-688-1057</span>
+                                                </p>
+                                                <p class="address-list">
+                                                    <span class="name">천안 분사무소</span>
+                                                    <span class="address">충청남도 천안시 동남구 청수14로 68 7층 703, 704호T: 041-555-6489F: 041-555-6490</span>
+                                                </p>
+                                                <p class="address-list">
+                                                    <span class="name">청주 분사무소</span>
+                                                    <span class="address">충청북도 청주시 서원구 산남로70번길 34, 신성미소시티블루1 504호T: 043-715-2005F: 043-715-2008</span>
+                                                </p>
+                                            </div>
+                                            <div class="copy-right">ⓒ Lawfirm GOODPLAN. All Rights Reserved.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- } 푸터 끝-->
+                </div>
+            </div>
+        </div>
+
+        <!-- 풀페이지 스크립트 { -->
+        <script>
+            var myFullpage = new fullpage('#fullpage', {
+                navigation: true,
+                navigationTooltips: ['First Section', 'Second Section', 'Third Section'],
+                controlArrows: false,
+                responsiveWidth: 950, 
+                responsiveHeight: 600, 
+                licenseKey: 'L6EO6-9SMM9-K0PL6-TRJ7J-XATEL'
+            });
+        </script>
+        <!-- } 풀페이지 스크립트 끝 -->
+
+
+
+
+        <!--플로팅 메뉴 { -->
+        <div class="floating-menu">
+            <ul class="menu-list">
+                <li>
+                    <a href="#">
+                        <img src="./img/floating/icon1.png" alt="전화" class="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/floating/icon2.png" alt="1:1" class="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/floating/icon3.png" alt="chat" class="icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- } 플로팅 메뉴 끝 -->
+
+
     </body>
 </html>

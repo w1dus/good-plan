@@ -103,7 +103,107 @@ footer .box2 .copy-right{ font-size: 14px; color: #808285; }
     footer .box2 .address-list .address{ font-size: 14px; } 
 }
 
+/* .floating-menu */
+.floating-menu{ position: fixed; right: 23px; bottom: 42px; z-index: 999; }
+.floating-menu .menu-list{ display: flex; align-items: center; gap: 8px; }
+.floating-menu .menu-list a{ width: 58px; height: 58px; background: rgba(0, 0, 0, 0.30); backdrop-filter: blur(15px); display: flex; align-items: center; justify-content: center; padding: 12px; border-radius: 10px; }
 
+@media screen and (max-width: 1250px) {
+    .floating-menu .menu-list a{ width: 40px; height: 40px; border-radius: 5px; }
+    .floating-menu .menu-list a .icon{ width: 20px; }
+}
+@media screen and (max-width: 950px) {
+    
+}
+@media screen and (max-width: 650px) {
+    .floating-menu{ bottom: 10px; right: 10px; }
+}
 
+/* .slide-menu */
+.slide-menu{ width: 237px; max-width: 90%; display: flex; flex-direction: column; position: fixed; right: -240px; transition: right .5s; top: 0; height: 100vh; z-index: 999; }
+.slide-menu.show{ right: 0; }
+.slide-menu .btn-div{ height: 93px; padding: 30px 3vw; display: flex; justify-content: flex-end; background: rgba(0, 0, 0, 0.30); backdrop-filter: blur(15px); width: 100%; }
+.slide-menu .btn-div .close-btn{ background: transparent; border: none; }
+.slide-menu .menu-div{ overflow-y: scroll; scrollbar-width: none; -ms-overflow-style: none;   overflow-y: scroll; color: #fff; padding: 30px; padding-bottom: 120px; flex-grow: 1; background-color: rgba(0, 0, 0, 0.50); backdrop-filter: blur(15px); }
+.slide-menu .menu-div::-webkit-scrollbar { display: none; }
+.slide-menu .menu-div .title-item{ font-size: 20px; font-weight: 700; }
+.slide-menu .menu-div .title-item + .sub-item{ margin-top: 5px; }
+.slide-menu .menu-div .sub-item{ font-weight: 300; font-size: 18px; padding: 5px 0 5px 35px; }
+.slide-menu .menu-div .sub-item + .title-item{ margin-top: 10px; }
 
+@media screen and (max-width: 1250px) {
+    .slide-menu .btn-div{ height: 66.8px; }
+    .slide-menu .btn-div{ padding: 0 3vw; }
+    .slide-menu .btn-div .icon{ width: 25px; }
+}
+@media screen and (max-width: 650px) {
+    .slide-menu .btn-div{ height: 60.8px; flex-shrink: 0; }
+    .slide-menu .btn-div .icon{ width: 20px; }
+    .slide-menu .menu-div .title-item{ font-size: 18px; }
+    .slide-menu .menu-div .sub-item{ font-size: 16px; padding-left: 20px; }
+}
 
+/* .main .section1 */
+.main .section1{ background-image: url('../img/main/section1/background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.main .section1 .inner{ display: flex; align-items: center; justify-content: center; flex-direction: column; }
+.main .section1 h1{ text-shadow: 3px 6px 17px rgba(0, 0, 0, 0.25); text-align: center; color: #DCD9D3; font-size: 52px;  } 
+.main .section1 h1 b{ font-weight: 700; }
+.main .section1 .scroll-div{ color: #fff; position: absolute; bottom: 10px; display: flex; flex-direction: column; gap: 5px; align-items: center; justify-content: center;  }
+@media screen and (max-width: 1250px) {
+    .main .section1 h1{ font-size: 45px; }
+}
+@media screen and (max-width: 950px) {
+    .main .section1 h1{ font-size: 40px; }
+}
+@media screen and (max-width: 650px) {
+    .main .section1 h1{ font-size: 25px; }
+    .main .section1 .scroll-div{ font-size: 14px; }
+}
+
+/* .main .section2 */
+.main .section2{ position: relative; overflow: hidden; background-image: url('../img/main/section2/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; }
+.main .section2 .fp-overflow{ height: 100vh; overflow: unset; }
+.main .section2 .inner{ justify-content: flex-end; height: 100%; display: flex; flex-direction: column;  }
+.main .section2 .left-content{ display: flex; flex-direction: column; justify-content: center; min-height: 700px; height: auto; position: relative; z-index: 1; }
+.main .section2 .lawyer-img{ min-height: 600px; height: 90vh; position: absolute; right: 20vw; }
+.main .title-bar{ margin-bottom: 35px; width: 80px; height: 4px; background-color: #D9AD76; }
+.main .section2 h2{ line-height: 1.25em; color: #DCD9D3; font-size: 42px;  }
+.main .section2 h2 b{ color: #fff; font-weight: 700; }
+.main .section2 h2 .mo-br{ display: none; }
+.main .section2 .content{ line-height: 1.5em; font-size: 32px; color: #DCD9D3; display: flex; align-items: center; gap: 2px; margin-top: 2px; }
+.main .section2 .content b{ color: #fff; font-weight: 700; }
+.main .section2 .more-btn-wrap{ display: flex; margin-top: 80px; }
+.main .section2 .more-btn-wrap .more-btn{ transition: background-color .5s, color .5s; border: 1px solid #D1CEC8; border-radius: 20px; padding: 7px 33px; font-size: 20px; color: #fff; }
+.main .section2 .more-btn-wrap .more-btn:hover{ background-color: #fff; color: #222; }
+
+@media screen and (max-width: 1725px) {
+    .main .section2 .lawyer-img{ right: 10vw; }
+}
+@media screen and (max-width: 1270px) {
+    .main .section2 .lawyer-img{ right: 0; }
+}
+@media screen and (max-width: 1250px) {
+    .main .section2 h2 .mo-br{ display: inline-block; }
+    .main .title-bar{ width: 60px; height: 2px; margin-bottom: 20px; }
+    .main .section2 .content{ font-size: 24px; }
+    .main .section2 .content .icon{ width: 20px; }
+}
+@media screen and (max-width: 950px) {
+    .main .section2{ padding-top: 50px; }
+    .main .section2 .lawyer-img{ width: auto; position: static; }
+    .main .section2 .fp-overflow{ height: auto;} 
+    .main .section2 h2{ font-size: 24px; text-align: center; }
+    .main .title-bar{ margin: 0 auto; width: 30px; margin-bottom: 30px; }
+    .main .section2 .content{ justify-content: center; }
+    .main .section2 .more-btn-wrap{ justify-content: center; margin-top: 20px; }
+    .main .section2 .more-btn-wrap .more-btn{ font-size: 16px; }
+    .main .section2 .left-content{ min-height: auto; }
+    .main .section2 .lawyer-img{ min-height: auto; margin: 0 auto; margin-top: 20px; width: 90%; height: auto; }
+}
+
+/* .main .section3 */
+.main .section3{ background-color: #1A2738; }
+.main .section3 h2 { color: #fff; }
+.main .section3 h2 .text{ font-size: 34px; }
+.main .section3 h2 .text b{ font-weight: 700; }
+.main .section3 .slide-wrap{ position: relative; }
