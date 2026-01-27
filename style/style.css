@@ -390,7 +390,7 @@ section.footer-section .fp-is-overflow{ min-height: unset !important; }
 
 /* #fp-nav.fp-right */
 #fp-nav.fp-right{ width: 100px !important; right: auto; left: 20px; }
-#fp-nav ul li{ display: flex !important; align-items: center !important; margin: 0 !important; width: 5px !important; height: 80px !important; }
+#fp-nav ul li{ display: flex !important; align-items: center !important; margin: 0 !important; width: 85px !important; height: 80px !important; }
 #fp-nav ul li:last-child{ display: none !important; }
 #fp-nav ul li .fp-tooltip{ width: auto !important; opacity: 1 !important; }
 #fp-nav ul li .fp-tooltip.fp-right{ top: auto !important; right: unset !important; left: 20px; }
