@@ -10,15 +10,15 @@ const successTab = () => {
     $('.success-tag-list .tag-btn').click(function(){
         $('.success-tag-list .tag-btn').removeClass('active');
         $(this).addClass('active');
-        $('.main .section4 .tab-content-list > li').removeClass('active');
-        $('.main .section4 .tab-content-list > li').eq($(this).index()).addClass('active');
+        $('.tab-content-list > li').removeClass('active');
+        $('.tab-content-list > li').eq($(this).index()).addClass('active');
     })
 }
 
 const mainSlide = () => {
     // 총 7개의 지역에서 의뢰인을 돕고 있습니다.
     var swiper = new Swiper(".main .section5 .mySwiper", {
-        slidesPerView: 2,
+        slidesPerView: 2.5,
         spaceBetween: 30,
         loop:true, 
         centeredSlides: true,
@@ -50,7 +50,7 @@ const mainSlide = () => {
               spaceBetween: 10,
             },
             2500: {
-                slidesPerView: 2,
+                slidesPerView: 2.5,
                 spaceBetween: 30,
             },
           },

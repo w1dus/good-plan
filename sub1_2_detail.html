@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+      
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <!-- 패럴렉스 -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+        <!-- fullPage.js / css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.js"></script>
+    </head>
+    <body>
+        <!-- 헤더 { -->
+        <header>
+            <div class="inner">
+                <a href="./index.html">
+                    <img src="./img/common/logo.svg" alt="법무법인 굿플랜" class="logo">
+                </a>
+                <button type="button" class="menu-btn">
+                    <img src="./img/common/menu-icon.svg" alt="menu" class="icon">
+                </button>
+            </div>
+        </header>
+        <!-- } 헤더 끝 -->
+        <!-- 우측 슬라이드 메뉴 { -->
+        <section class="slide-menu">
+            <div class="btn-div">
+                <button type="button" class="close-btn">
+                    <img src="./img/common/close-icon.svg" alt="close" class="icon">
+                </button>
+            </div>
+            <div class="menu-div">
+                <div class="title-item">굿플랜 소개</div>
+                <div class="sub-item"><a href="./sub1_1.html">법무법인 소개</a></div>
+                <div class="sub-item"><a href="./sub1_2.html">구성원</a></div>
+                <div class="sub-item"><a href="./sub1_3.html">오시는길</a></div>
+
+                <div class="title-item">주요업무</div>
+                <div class="sub-item"><a href="./sub2_1.html">형사</a></div>
+                <div class="sub-item"><a href="./sub2_2.html">부동산</a></div>
+                <div class="sub-item"><a href="./sub2_3.html">이혼  · 상속</a></div>
+                <div class="sub-item"><a href="./sub2_4.html">손해배상  · 대여금</a></div>
+                <div class="sub-item"><a href="./sub2_5.html">재개발 · 재건축  </a></div>
+                <div class="sub-item"><a href="./sub2_6.html">회생 · 파산</a></div>
+                <div class="sub-item"><a href="./sub2_7.html">조세 · 행정</a></div>
+                <div class="sub-item"><a href="./sub2_8.html">가상자산</a></div>
+                <div class="sub-item"><a href="./sub2_9.html">자문</a></div>
+
+                <div class="title-item">커뮤니티</div>
+                <div class="sub-item"><a href="./sub3_1.html">성공사례</a></div>
+                <div class="sub-item"><a href="./sub3_2.html">언론보도</a></div>
+                <div class="sub-item"><a href="./sub3_3.html">소식</a></div>
+                <div class="sub-item"><a href="./sub3_4.html">전문 칼럼</a></div>
+
+                <div class="title-item">상담신청</div>
+                <div class="sub-item"><a href="./sub4_1.html">상담신청</a></div>
+            </div>
+        </section>
+        <!-- } 우측 슬라이드 메뉴-->
+        
+        <main id="smooth-wrapper">
+            <article id="smooth-content">
+                
+
+                <main class="sub sub1_2 sub1 sub1_2-detail">
+                    <section class="sub-banner-section">
+                        <div class="inner">
+                            <div class="sec_top"></div>
+                            <div class="bar"></div>
+                            <h1>구성원</h1>
+                            <div class="en">LAWFIRM <span class="gold">GOODPLAN</span></div>
+                        </div>
+                    </section>
+                    <section class="detail-section">
+                        <div class="inner">
+
+                            <div class="menuBox">
+                                <ul class="menuList">
+                                    <li>
+                                        <a href="./basicList.html" class="item"><img src="./img/boardImg/list.png" alt="목록"/> <p class="txt">목록</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="item"><img src="./img/boardImg/corner-up-left.png" alt="답변"/> <p class="txt">답변</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="./write.html" class="item"><img src="./img/boardImg/write.png" alt="글쓰기"/> <p class="txt">글쓰기</p></a>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="item"><img src="./img/boardImg/threedot.png" alt="편집"/> <p class="txt">편집</p></button>
+                                        <ul class="subMenu">
+                                            <li><a href="#" class="item2">수정</a></li>
+                                            <li><a href="#" class="item2">삭제</a></li>
+                                            <li><a href="#" class="item2">복사</a></li>
+                                            <li><a href="#" class="item2">이동</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 배너 이미지 관리자 등록 -->
+                            <img src="../img/sub/sub1_2/example-banner.jpg" alt="배너이미지" class="banner-img" />
+                            <div class="info-div">
+                                <div class="title">경력</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                            </div>
+
+                            <div class="info-div">
+                                <div class="title">학력</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                            </div>
+
+                            <div class="info-div">
+                                <div class="title">저서</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                            </div>
+
+                            <div class="info-div">
+                                <div class="title">외부활동</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                            </div>
+
+                            <div class="info-div">
+                                <div class="title">언론보도</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                                <div class="dot">강원도 지방토지수용위원회 위원</div>
+                            </div>
+
+                            <div class="btn-div">
+                                <a href="./sub1_2.html" class="list-btn">목록으로</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="apply-section">
+                        <div class="inner">
+                            <div class="left-box">
+                                <h2>
+                                    <div class="title-bar"></div>
+                                    <div class="text">
+                                        <b>
+                                            상담 후 <br/>
+                                            사건을 맡기지 않아도 좋습니다.
+                                        </b>
+                                    </div>
+                                </h2>
+                                <div class="content">
+                                    지금 상황에 맞는, 가장 현실적인 플랜을 안내해드립니다. 
+                                </div>
+                            </div>
+                            <div class="right-box">
+                                <div class="form-div">
+                                    <ul class="formList">
+                                        <li class="half">
+                                            <div class="label">업체명 / 성함 <span>*</span></div>
+                                            <div class="iptBox">
+                                                <input type="text" required placeholder="업체명/성함을 입력해주세요." class="ipt" />
+                                            </div>
+                                        </li>
+                                        <li class="half">
+                                            <div class="label">연락처 <span>*</span></div>
+                                            <div class="iptBox">
+                                                <input type="text" required placeholder="연락처를 입력해주세요." class="ipt" />
+                                            </div>
+                                        </li>
+                                        <li class="half">
+                                            <div class="label">사무소 <span>*</span></div>
+                                            <div class="iptBox">
+                                                <select name="" class="ipt">
+                                                    <!--아래 값은 예시입니다. -->
+                                                    <option value="">-</option>
+                                                    <option value="">서초 주사무소</option>
+                                                    <option value="">수원 분사무소</option>
+                                                    <option value="">목동 분사무소</option>
+                                                    <option value="">부산 분사무소</option>
+                                                    <option value="">여주 분사무소</option>
+                                                    <option value="">천안 분사무소</option>
+                                                    <option value="">청주 분사무소</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li class="half">
+                                            <div class="label">사건분야 <span>*</span></div>
+                                            <div class="iptBox">
+                                                <select name="" class="ipt">
+                                                    <!--아래 값은 예시입니다. -->
+                                                    <option value="">-</option>
+                                                    <option value="">형사</option>
+                                                    <option value="">부동산</option>
+                                                    <option value="">이혼  · 상속</option>
+                                                    <option value="">손해배상  · 대여금</option>
+                                                    <option value="">재개발 · 재건축  </option>
+                                                    <option value="">회생 · 파산</option>
+                                                    <option value="">조세 · 행정</option>
+                                                    <option value="">가상자산</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="label">내용 <span>*</span></div>
+                                            <div class="iptBox">
+                                                <textarea name="" placeholder="내용을 입력해주세요" class="ipt"></textarea>
+                                            </div>
+                                        </li>
+                                    </ul>
+        
+                                    <div class="agree-info-div">
+                                        <div class="info-title">개인정보보호를 위한 이용자 동의사항</div>
+                                        <div class="info-content">
+                                            1. 개인정보의 수집 및 이용 목적 : 문의에 대한 답변<br/>
+                                            2. 수집항목 : 연락처, 이메일<br/>
+                                            3. 개인정보의 보유 및 이용기간 : 이용목적이 달성된 때까지 보유합니다.
+                                        </div>
+                                    </div>
+        
+                                    <!-- ✅ 동의 체크박스 -->
+                                    <div class="agreeCheckDiv">
+                                        <label>
+                                            <input type="checkbox"/>
+                                            <div class="textBox">개인정보 수집 및 이용 동의</div>
+                                        </label>
+                                    </div>
+        
+                                    
+                                    <button type="submit" class="submit-btn">문의하기 <img src="./img/main/apply-section/right-arrow.png" alt="화살표" class="icon"/></button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+
+                <!-- 푸터 시작 { -->
+                <footer>
+                    <div class="inner">
+                        <div class="box1">
+                            <img src="./img/common/footer-logo.svg" alt="법무법인 굿플랜" class="logo">
+                        </div>
+                        <div class="box2">
+                            <ul class="info-list">
+                                <li>
+                                    <div class="label">전화</div>
+                                    <div class="content">대표번호 : 1800-6490</div>
+                                </li>
+                                <li>
+                                    <div class="label">E-mail</div>
+                                    <div class="content">ask@goodplan.kr</div>
+                                </li>
+                                <li>
+                                    <div class="label">사업자등록번호</div>
+                                    <div class="content">890-87-01999</div>
+                                </li>
+                                <li>
+                                    <div class="label">대표변호사</div>
+                                    <div class="content">오규성, 김가람</div>
+                                </li>
+                                <li>
+                                    <div class="label">광고책임변호사</div>
+                                    <div class="content">김가람</div>
+                                </li>
+                                <li class="full">
+                                    <div class="label">주소</div>
+                                    <div class="half-div">
+                                        <div class="address-wrap">
+                                            <p class="address-list">
+                                                <span class="name">서초 주사무소</span>
+                                                <span class="address">서울특별시 서초구 서초중앙로24길 16, KM타워 5층T : 1800-6490F : 02-525-6489</span>
+                                            </p>
+                                            <p class="address-list">
+                                                <span class="name">수원 분사무소</span>
+                                                <span class="address">경기 수원시 영통구 광교중앙로 256 탑프라자 403호T : 031-213-6489F : 031-213-6488</span>
+                                            </p>
+                                            <p class="address-list">
+                                                <span class="name">목동 분사무소</span>
+                                                <span class="address">서울 양천구 신월로 387, 유앤미법조빌딩 103호ㆍ301호T: 02-2604-6489F: 02-2604-6488</span>
+                                            </p>
+                                            <p class="address-list">
+                                                <span class="name">부산 분사무소</span>
+                                                <span class="address">부산광역시 해운대구 APEC로 17, 센텀리더스마크 3702호T: 051-925-3702F: 051-926-3702</span>
+                                            </p>
+                                            <p class="address-list">
+                                                <span class="name">여주 분사무소</span>
+                                                <span class="address">경기 여주시 현암로 21-10 103호T: 031-884-1007F: 031-688-1057</span>
+                                            </p>
+                                            <p class="address-list">
+                                                <span class="name">천안 분사무소</span>
+                                                <span class="address">충청남도 천안시 동남구 청수14로 68 7층 703, 704호T: 041-555-6489F: 041-555-6490</span>
+                                            </p>
+                                            <p class="address-list">
+                                                <span class="name">청주 분사무소</span>
+                                                <span class="address">충청북도 청주시 서원구 산남로70번길 34, 신성미소시티블루1 504호T: 043-715-2005F: 043-715-2008</span>
+                                            </p>
+                                        </div>
+                                        <div class="copy-right">ⓒ Lawfirm GOODPLAN. All Rights Reserved.</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+                <!-- } 푸터 끝-->
+
+            </article>
+        </main>
+
+
+
+    </body>
+</html>
