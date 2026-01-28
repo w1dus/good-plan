@@ -167,6 +167,7 @@ footer .box2 .copy-right{ font-size: 14px; color: #808285; }
 .main .section2 .left-content{ display: flex; flex-direction: column; justify-content: center; min-height: 700px; height: auto; position: relative; z-index: 1; }
 .main .section2 .lawyer-img{ min-height: 600px; height: 90vh; position: absolute; right: 20vw; }
 .main .title-bar{ margin-bottom: 35px; width: 80px; height: 4px; background-color: #D9AD76; }
+.sub .title-bar{ margin-bottom: 35px; width: 80px; height: 4px; background-color: #D9AD76; }
 .main .section2 h2{ line-height: 1.25em; color: #DCD9D3; font-size: 42px;  }
 .main .section2 h2 b{ color: #fff; font-weight: 700; }
 .main .section2 h2 .mo-br{ display: none; }
@@ -185,6 +186,7 @@ footer .box2 .copy-right{ font-size: 14px; color: #808285; }
 @media screen and (max-width: 1250px) {
     .main .section2 h2 .mo-br{ display: inline-block; }
     .main .title-bar{ width: 60px; height: 2px; margin-bottom: 20px; }
+    .sub .title-bar{ width: 60px; height: 2px; margin-bottom: 20px; }
     .main .section2 .content{ font-size: 24px; }
     .main .section2 .content .icon{ width: 20px; }
 }
@@ -194,6 +196,7 @@ footer .box2 .copy-right{ font-size: 14px; color: #808285; }
     .main .section2 .fp-overflow{ height: auto;} 
     .main .section2 h2{ font-size: 24px; text-align: center; }
     .main .title-bar{ margin: 0 auto; width: 30px; margin-bottom: 30px; }
+    .sub .title-bar{ margin: 0 auto; width: 30px; margin-bottom: 30px; }
     .main .section2 .content{ justify-content: center; }
     .main .section2 .more-btn-wrap{ justify-content: center; margin-top: 20px; }
     .main .section2 .more-btn-wrap .more-btn{ font-size: 16px; }
@@ -381,6 +384,9 @@ h2 .text b{ font-weight: 700; }
 }
 @media screen and (max-width: 650px) {
     .apply-section{ padding: 50px 0; }
+
+    .apply-section .left-box h2{ text-align: center; }
+
     .main .apply-section .right-box .form-div{ padding: 30px 20px; }
     .apply-section .right-box .agree-info-div .info-title{ font-size: 14px; }
     .apply-section .right-box .agree-info-div .info-content{ font-size: 14px; }
@@ -766,11 +772,11 @@ section.footer-section .fp-is-overflow{ min-height: unset !important; }
 .sub3_1 .section1{ padding: 100px 0; }
 .sub3_1 .section1 .success-tag-list{ justify-content: flex-start; }
 .sub3_1 .section1 .search-div{ margin-top: 38px; display: flex; align-items: center; justify-content: flex-start; }
-.sub3_1 .section1 .search-div .search-box{ display: flex; align-items: center; position: relative; width: 100%; max-width: 547px;  }
-.sub3_1 .section1 .search-div .search-box .ipt{ border: 1px solid #917962 !important; padding: 24px 32px; border-radius: 100px;  }
-.sub3_1 .section1 .search-div .search-box .ipt::placeholder{ color: #7f7f7f; }
-.sub3_1 .section1 .search-div .search-box .ipt:focus{ border: none Im !important; box-shadow: unset !important; }
-.sub3_1 .section1 .search-div .search-box .search-btn{ background-color: transparent; border: none; position: absolute; right: 18px; }
+.sub .search-div .search-box{ display: flex; align-items: center; position: relative; width: 100%; max-width: 547px;  }
+.sub .search-div .search-box .ipt{ border: 1px solid #917962 !important; padding: 24px 32px; border-radius: 100px;  }
+.sub .search-div .search-box .ipt::placeholder{ color: #7f7f7f; }
+.sub .search-div .search-box .ipt:focus{ border: none Im !important; box-shadow: unset !important; }
+.sub .search-div .search-box .search-btn{ background-color: transparent; border: none; position: absolute; right: 18px; }
 .sub3_1 .section1 .success-list{ margin-top: 36px; }
 .sub3_1 .section1 .paging_box{ margin-top: 30px; }
 .sub3_1 .section1 .no-result{ text-align: center; margin: 50px 0 0 0; color: #222; }
@@ -786,7 +792,7 @@ section.footer-section .fp-is-overflow{ min-height: unset !important; }
     .sub3_1 .section1 .success-list{ grid-template-columns: repeat(1,1fr); }
     .sub3_1 .section1 .success-list .item .img-div{ height: 50vw; }
 
-    .sub3_1 .section1 .search-div .search-box .ipt{ padding: 15px 20px; font-size: 14px; padding-right: 50px; }
+    .sub .search-div .search-box .ipt{ padding: 15px 20px; font-size: 14px; padding-right: 50px; }
 }
 
 /* .sub3_1_detail .section1 */
@@ -855,3 +861,11 @@ section.footer-section .fp-is-overflow{ min-height: unset !important; }
 
     .sub3_1_detail .section1 .content-wrap .apply-div .apply-btn{ font-size: 16px; }
 }
+
+
+
+
+
+
+
+
