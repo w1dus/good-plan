@@ -20,6 +20,7 @@ const mainSlide = () => {
     var swiper = new Swiper(".main .section5 .mySwiper", {
         slidesPerView: 2.5,
         spaceBetween: 30,
+        loopedSlides: 7,
         loop:true, 
         centeredSlides: true,
         observer: true,
