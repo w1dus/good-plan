@@ -1,5 +1,5 @@
 :root {
-    --board-active-color: #365A91;
+    --board-active-color: #917962;
 }   
 
 /* 관리자 메뉴 */
@@ -34,6 +34,9 @@
 
 /* 게시판 공통 */
 .boardArti{ padding: 100px 0; }
+@media screen and (max-width: 650px) {
+    .boardArti{ padding: 50px 0; }
+}
 
 /* 게시판 타이틀 */
 .boardArti .boardBanner{ margin-bottom: 50px; text-align: center; }
@@ -57,7 +60,7 @@
 .basicBoardArti .basicList > li .item .center{ text-align: center; }
 .basicBoardArti .basicList > li .item .chk{ flex-shrink: 0; width: 22px; }
 .basicBoardArti .basicList > li .item .number{ flex-shrink: 0; width: 50px; overflow: hidden; }
-.basicBoardArti .basicList > li .item .number.on{ color: #365A91; }
+.basicBoardArti .basicList > li .item .number.on{ color: #917962; }
 .basicBoardArti .basicList > li .item .title{ justify-content: center; flex-grow: 1; overflow: hidden; gap: 2px; display: flex; gap: 2px;  }
 .basicBoardArti .basicList > li .item .title .iconWrap{ display: flex; align-items: center; gap: 2px; align-items: center; }
 .basicBoardArti .basicList > li .item .title a{ width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -130,7 +133,7 @@
 /* 게시판 상세페이지 */
 .boardViewArti .viewContent img{ max-width: 100%; display: inline-block; }
 .boardViewArti .viewAddArti{ display: flex; flex-direction: column; gap: 10px; margin-top: 50px; }
-.boardViewArti .viewAddArti .item{ padding: 16px; border-radius: 8px; border: 1px solid #E6E6E6; background-color: #fff; font-size: 14px; padding-left: 50px; background-repeat: no-repeat; background-position: center left 16px; }
+.boardViewArti .viewAddArti .item{ padding: 16px; border-radius: 8px; border: 1px solid #E6E6E6; font-size: 14px; padding-left: 50px; background-repeat: no-repeat; background-position: center left 16px; }
 .boardViewArti .viewAddArti .item.file{ background-image: url('../img/boardImg/folder.png'); }
 .boardViewArti .viewAddArti .item.link{ background-image: url('../img/boardImg/linkwrite.png'); }
 .boardViewArti .viewAddArti .item .t2{ font-size: 0.9em; color: #999; }
@@ -162,7 +165,7 @@
 .boardArti h5{ font-size: 12px; margin: 16px 0; font-weight: 700; }
 .boardArti h6{ font-size: 11px; margin: 16px 0; font-weight: 700; }
 
-.boardArti .viewContent{ line-height: 1.5em; font-size: 12px; }
+.boardArti .viewContent{ line-height: 1.5em; }
 .boardArti .viewContent ul, 
 .boardArti .viewContent dl, 
 .boardArti .viewContent dt, 

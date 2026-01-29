@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+      
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <!-- 패럴렉스 -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+        <!-- fullPage.js / css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.js"></script>
+    </head>
+    <body>
+        <!-- 헤더 { -->
+        <header>
+            <div class="inner">
+                <a href="./index.html">
+                    <img src="./img/common/logo.svg" alt="법무법인 굿플랜" class="logo">
+                </a>
+                <button type="button" class="menu-btn">
+                    <img src="./img/common/menu-icon.svg" alt="menu" class="icon">
+                </button>
+            </div>
+        </header>
+        <!-- } 헤더 끝 -->
+        <!-- 우측 슬라이드 메뉴 { -->
+        <section class="slide-menu">
+            <div class="btn-div">
+                <button type="button" class="close-btn">
+                    <img src="./img/common/close-icon.svg" alt="close" class="icon">
+                </button>
+            </div>
+            <div class="menu-div">
+                <div class="title-item"><a href="./sub1_1.html">굿플랜 소개</a></div>
+                <div class="sub-item"><a href="./sub1_1.html">법무법인 소개</a></div>
+                <div class="sub-item"><a href="./sub1_2.html">구성원</a></div>
+                <div class="sub-item"><a href="./sub1_3.html">오시는길</a></div>
+
+                <div class="title-item"><a href="./sub2.html">주요업무</a></div>
+                <div class="sub-item"><a href="./sub2_1.html">형사</a></div>
+                <div class="sub-item"><a href="./sub2_2.html">부동산</a></div>
+                <div class="sub-item"><a href="./sub2_3.html">이혼  · 상속</a></div>
+                <div class="sub-item"><a href="./sub2_4.html">손해배상  · 대여금</a></div>
+                <div class="sub-item"><a href="./sub2_5.html">재개발 · 재건축  </a></div>
+                <div class="sub-item"><a href="./sub2_6.html">회생 · 파산</a></div>
+                <div class="sub-item"><a href="./sub2_7.html">조세 · 행정</a></div>
+                <div class="sub-item"><a href="./sub2_8.html">가상자산</a></div>
+                <div class="sub-item"><a href="./sub2_9.html">자문</a></div>
+
+                <div class="title-item"><a href="./sub3_1.html">커뮤니티</a></div>
+                <div class="sub-item"><a href="./sub3_1.html">성공사례</a></div>
+                <div class="sub-item"><a href="./sub3_2.html">언론보도</a></div>
+                <div class="sub-item"><a href="./sub3_3.html">소식</a></div>
+                <div class="sub-item"><a href="./sub3_4.html">전문 칼럼</a></div>
+
+                <div class="title-item"><a href="./sub4_1.html">상담신청</a></div>
+                <div class="sub-item"><a href="./sub4_1.html">상담신청</a></div>
+            </div>
+        </section>
+        <!-- } 우측 슬라이드 메뉴-->
+        
+        <main id="smooth-wrapper">
+            <article id="smooth-content">
+                
+
+                <main class="sub sub4_1 sub4 sub1_3">
+                    <section class="sub-banner-section">
+                        <div class="inner">
+                            <div class="sec_top"></div>
+                            <div class="bar"></div>
+                            <h1>전문칼럼</h1>
+                            <div class="en">LAWFIRM <span class="gold">GOODPLAN</span></div>
+                        </div>
+                    </section>
+                    <section class="apply-section ani">
+                        <div class="inner">
+                            <div class="left-box">
+                                <h2>
+                                    <div class="title-bar"></div>
+                                    <div class="text">
+                                        <b>
+                                            상담 후 <br/>
+                                            사건을 맡기지 않아도 좋습니다.
+                                        </b>
+                                    </div>
+                                </h2>
+                                <div class="content">
+                                    지금 상황에 맞는, 가장 현실적인 플랜을 안내해드립니다. 
+                                </div>
+                            </div>
+                            <div class="right-box">
+                                <div class="form-div">
+                                    <ul class="formList">
+                                        <li class="half">
+                                            <div class="label">업체명 / 성함 <span>*</span></div>
+                                            <div class="iptBox">
+                                                <input type="text" required placeholder="업체명/성함을 입력해주세요." class="ipt" />
+                                            </div>
+                                        </li>
+                                        <li class="half">
+                                            <div class="label">연락처 <span>*</span></div>
+                                            <div class="iptBox">
+                                                <input type="text" required placeholder="연락처를 입력해주세요." class="ipt" />
+                                            </div>
+                                        </li>
+                                        <li class="half">
+                                            <div class="label">사무소 <span>*</span></div>
+                                            <div class="iptBox">
+                                                <select name="" class="ipt">
+                                                <option value="">-</option>
+                                                    <option value="">서초</option>
+                                                    <option value="">목동</option>
+                                                    <option value="">수원</option>
+                                                    <option value="">여주</option>
+                                                    <option value="">천안</option>
+                                                    <option value="">청주</option>
+                                                    <option value="">부산</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li class="half">
+                                            <div class="label">사건분야 <span>*</span></div>
+                                            <div class="iptBox">
+                                                <select name="" class="ipt">
+                                                    <!--아래 값은 예시입니다. -->
+                                                    <option value="">-</option>
+                                                    <option value="">형사</option>
+                                                    <option value="">부동산</option>
+                                                    <option value="">이혼  · 상속</option>
+                                                    <option value="">손해배상  · 대여금</option>
+                                                    <option value="">재개발 · 재건축  </option>
+                                                    <option value="">회생 · 파산</option>
+                                                    <option value="">조세 · 행정</option>
+                                                    <option value="">가상자산</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="label">내용 <span>*</span></div>
+                                            <div class="iptBox">
+                                                <textarea name="" placeholder="내용을 입력해주세요" class="ipt"></textarea>
+                                            </div>
+                                        </li>
+                                    </ul>
+        
+                                    <div class="agree-info-div">
+                                        <div class="info-title">개인정보보호를 위한 이용자 동의사항</div>
+                                        <div class="info-content">
+                                            1. 개인정보의 수집 및 이용 목적 : 문의에 대한 답변<br/>
+                                            2. 수집항목 : 연락처, 이메일<br/>
+                                            3. 개인정보의 보유 및 이용기간 : 이용목적이 달성된 때까지 보유합니다.
+                                        </div>
+                                    </div>
+        
+                                    <!-- ✅ 동의 체크박스 -->
+                                    <div class="agreeCheckDiv">
+                                        <label>
+                                            <input type="checkbox"/>
+                                            <div class="textBox">개인정보 수집 및 이용 동의</div>
+                                        </label>
+                                    </div>
+        
+                                    
+                                    <button type="submit" class="submit-btn">문의하기 <img src="./img/main/apply-section/right-arrow.png" alt="화살표" class="icon"/></button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="step-section">
+                        <div class="inner">
+                            <h3>상담은 이렇게 진행됩니다.</h3>
+                            <div class="sub-content-div">
+                                상담 후 진행 여부는 충분히 검토 후 결정하셔도 됩니다.
+                            </div>
+
+                            <ul class="item-list">
+                                <li>
+                                    <div class="item">
+                                        <div class="step">STEP 01</div>
+                                        <div class="title">상담 신청</div>
+                                        <div class="content">
+                                            간단한 정보 입력만으로 <br/>
+                                            상담을 신청하실 수 있습니다.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="step">STEP 02</div>
+                                        <div class="title">사건 검토</div>
+                                        <div class="content">
+                                            접수된 내용을 바탕으로 전문 변호사가<br/>
+                                            사건의 성격과 쟁점을 검토합니다.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="step">STEP 03</div>
+                                        <div class="title">변호사 상담</div>
+                                        <div class="content">
+                                            법적 쟁점, 대응 방향, 예상되는 절차 등<br/>
+                                            사건에 맞는 플랜을 제시해드립니다.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="step">STEP 04</div>
+                                        <div class="title">진행 여부 결정</div>
+                                        <div class="content">
+                                            상담 내용을 바탕으로 사건 진행 여부를<br/>
+                                            결정하실 수 있습니다.
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="section1">
+                        <div class="inner">
+                            <div class="sub-title-div">
+                                <div class="bar"></div>
+                                <h2>오시는 길</h2>
+                            </div>
+                            <div class="sub-content-div">
+                                전국 7개 사무소를 운영하며, 의뢰인의 접근성을 최우선으로 생각합니다.<br>
+                                각 지역별 전담 변호사가 배치되어 보다 신속하고 안정적인 법률 서비스를 제공합니다.
+                            </div>
+                            
+
+
+
+                            <div class="success-tag-list">
+                                <a href="./sub1_3.html" class="tag-btn active">서초</a>
+                                <a href="./sub1_4.html" class="tag-btn">목동 </a>
+                                <a href="./sub1_5.html" class="tag-btn">수원</a>
+                                <a href="./sub1_6.html" class="tag-btn">여주</a>
+                                <a href="./sub1_7.html" class="tag-btn">천안</a>
+                                <a href="./sub1_8.html" class="tag-btn">청주</a>
+                                <a href="./sub1_9.html" class="tag-btn">부산</a>
+                            </div>
+
+
+                            <ul class="tab-content-list">
+                                <li class="active">
+                                    <div class="item">
+                                        <div class="map-div">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.561564649237!2d127.01525089999998!3d37.4946714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca169054be1a1%3A0x47489d754dd95f49!2z7ISc7Jq47Yq567OE7IucIOyEnOy0iOq1rCDshJzstIjspJHslZnroZwyNOq4uCAxNg!5e0!3m2!1sko!2skr!4v1769496483780!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                        <div class="content-div">
+                                            <div class="map-title">서초 주사무소</div>
+                                            <div class="address">
+                                                서울특별시 서초구 서초중앙로 24길 16, KM타워 5층 <br>
+                                                (교대역 4번 출구에서 70m)
+                                            </div>
+                                            <div class="info-wrap">
+                                                <div class="title">연락처</div>
+                                                <div class="info-div">
+                                                    <div class="list bold">
+                                                        <div class="label">전화번호</div>
+                                                        <div class="content"><a href="tel:02-533-6489">02-533-6489</a></div>
+                                                    </div>
+                                                    <div class="list bold">
+                                                        <div class="label">상담 전화번호</div>
+                                                        <div class="content"><a href="tel:1800-6490">1800-6490</a></div>
+                                                    </div>
+                                                    <div class="list">
+                                                        <div class="label">팩스번호</div>
+                                                        <div class="content">02-525-6489</div>
+                                                    </div>
+                                                    <div class="list">
+                                                        <div class="label">이메일</div>
+                                                        <div class="content"><span class="underline">ask@goodplan.kr</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="parking-wrap">
+                                                <div class="title">주차안내</div>
+                                                <div class="content">
+                                                    건물 내 기계식 주차가 가능하지만, <br>
+                                                    기계식이므로 SUV 및 대형 차량은 수용이 어렵습니다.  <br>
+                                                    해당 차량은 아래 주차장을 이용해 주시길 바랍니다. <br> <br>
+
+                                                    <p class="number number1">
+                                                        대림서초리시온아파트 주차장 (1시간 주차 무료, 초과 시 시간당 6,000원)<br>
+                                                        ※ 주차증 지참 후 확인 도장 필요
+                                                    </p>
+                                                    <p class="number number2">
+                                                        하이파킹 교대역 동측 공영 주차장 (5분당 400원)
+                                                    </p>
+                                                    <p class="number number3">
+                                                        동익성봉빌딩 민영 주차장 (시간당 6,000원)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="item">
+                                        <div class="map-div">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.368522961964!2d126.86400689999999!3d37.52280929999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9dd48cd79643%3A0xa458412848f3f341!2z7Jyg7JWk66-4IOuyleyhsOu5jOuUqQ!5e0!3m2!1sko!2skr!4v1769500069938!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                        <div class="content-div">
+                                            <div class="map-title">목동 사무소</div>
+                                            <div class="address">
+                                                서울 양천구 신월로 387, 유앤미법조빌딩 103호ㆍ301호 <br>
+                                                (서울남부지방법원 정문 맞은편 건물)
+                                            </div>
+                                            <div class="info-wrap">
+                                                <div class="title">연락처</div>
+                                                <div class="info-div">
+                                                    <div class="list bold">
+                                                        <div class="label">전화번호</div>
+                                                        <div class="content"><a href="tel:02-2604-6489">02-2604-6489</a></div>
+                                                    </div>
+                                                    <div class="list">
+                                                        <div class="label">팩스번호</div>
+                                                        <div class="content">02-2604-6488</div>
+                                                    </div>
+                                                    <div class="list">
+                                                        <div class="label">이메일</div>
+                                                        <div class="content"><span class="underline">ask@goodplan.kr</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="parking-wrap">
+                                                <div class="title">주차안내</div>
+                                                <div class="content">
+                                                    건물 뒤편 기계식 주차 (30% 할인권 제공)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="item">
+                                        <div class="map-div">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.1039010444356!2d127.06545627601646!3d37.29267127211085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5b11e8f66fed%3A0x7ece698bba75cca4!2z6rK96riw64-EIOyImOybkOyLnCDsmIHthrXqtawg6rSR6rWQ7KSR7JWZ66GcIDI1Ng!5e0!3m2!1sko!2skr!4v1769500168817!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                        <div class="content-div">
+                                            <div class="map-title">수원사무소</div>
+                                            <div class="address">
+                                                경기 수원시 영통구 광교중앙로 256 탑프라자 403호<br>
+                                                (신분당선 상현역 2번 출구에서 500m)
+                                            </div>
+                                            <div class="info-wrap">
+                                                <div class="title">연락처</div>
+                                                <div class="info-div">
+                                                    <div class="list bold">
+                                                        <div class="label">전화번호</div>
+                                                        <div class="content"><a href="tel:031-213-6489">031-213-6489</a></div>
+                                                    </div>
+                                                    <div class="list">
+                                                        <div class="label">팩스번호</div>
+                                                        <div class="content">031-213-6488</div>
+                                                    </div>
+                                                    <div class="list">
+                                                        <div class="label">이메일</div>
+                                                        <div class="content"><span class="underline">ask@goodplan.kr</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="parking-wrap">
+                                                <div class="title">주차안내</div>
+                                                <div class="content">
+                                                    건물 내 지하주차장 이용
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="item">
+                                        <div class="map-div">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.2479971778994!2d127.63092537601743!3d37.312952872105306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35635d8161804a5b%3A0xad0ccbd5ebe666ab!2z6rK96riw64-EIOyXrOyjvOyLnCDtmITslZTroZwgMjEtMTA!5e0!3m2!1sko!2skr!4v1769500248186!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                        <div class="content-div">
+                                            <div class="map-title">여주사무소</div>
+                                            <div class="address">
+                                                경기 여주시 현암로 21-10 103호<br>
+                                                (수원지방법원 여주지원 정문 앞 건물)
+                                            </div>
+                                            <div class="info-wrap">
+                                                <div class="title">연락처</div>
+                                                <div class="info-div">
+                                                    <div class="list bold">
+                                                        <div class="label">전화번호</div>
+                                                        <div class="content"><a href="tel:031-884-1007">031-884-1007</a></div>
+                                                    </div>
+                                                    <div class="list">
+                                                        <div class="label">팩스번호</div>
+                                                        <div class="content">031-688-1057</div>
+                                                    </div>
+                                                    <div class="list">
+                                                        <div class="label">이메일</div>
+                                                        <div class="content"><span class="underline">ask@goodplan.kr</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="parking-wrap">
+                                                <div class="title">주차안내</div>
+                                                <div class="content">
+                                                    건물 뒤편 주차장 및 여주지원 주차장 이용
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="item">
+                                        <div class="map-div">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.422853163388!2d127.15140227599403!3d36.784410772251675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ad71ff9968bf7%3A0x3ad322233cdbaceb!2z7Lap7LKt64Ko64-EIOyynOyViOyLnCDrj5nrgqjqtawg7LKt7IiYMTTroZwgNjg!5e0!3m2!1sko!2skr!4v1769500329794!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                        <div class="content-div">
+                                            <div class="map-title">천안사무소</div>
+                                            <div class="address">
+                                                충청남도 천안시 동남구 청수14로 68 7층 703, 704호<br>
+                                                (대전지방검찰청 천안지청 맞은 편 건물)
+                                            </div>
+                                            <div class="info-wrap">
+                                                <div class="title">연락처</div>
+                                                <div class="info-div">
+                                                    <div class="list bold">
+                                                        <div class="label">전화번호</div>
+                                                        <div class="content"><a href="tel:1551-6494">1551-6494</a></div>
+                                                    </div>
+                                                    <div class="list">
+                                                        <div class="label">팩스번호</div>
+                                                        <div class="content">041-555-6490</div>
+                                                    </div>
+                                                    <div class="list">
+                                                        <div class="label">이메일</div>
+                                                        <div class="content"><span class="underline">ask@goodplan.kr</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="parking-wrap">
+                                                <div class="title">주차안내</div>
+                                                <div class="content">
+                                                    건물 내 지하주차장 이용
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="item">
+                                        <div class="map-div">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3202.564758998981!2d127.46383917598664!3d36.61279027230115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356528a71696d4e3%3A0xc7109867bb9b39e!2z7Lap7LKt67aB64-EIOyyreyjvOyLnCDshJzsm5Dqtawg7IKw64Ko66GcNzDrsojquLggMzQ!5e0!3m2!1sko!2skr!4v1769500483695!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                        <div class="content-div">
+                                            <div class="map-title">청주사무소</div>
+                                            <div class="address">
+                                                충청북도 청주시 서원구 산남로70번길 34, <br>
+                                                신성미소시티블루1 504호 
+                                            </div>
+                                            <div class="info-wrap">
+                                                <div class="title">연락처</div>
+                                                <div class="info-div">
+                                                    <div class="list bold">
+                                                        <div class="label">전화번호</div>
+                                                        <div class="content"><a href="tel:043-715-2005">043-715-2005</a></div>
+                                                    </div>
+                                                    <div class="list">
+                                                        <div class="label">팩스번호</div>
+                                                        <div class="content">043-715-2008</div>
+                                                    </div>
+                                                    <div class="list">
+                                                        <div class="label">이메일</div>
+                                                        <div class="content"><span class="underline">ask@goodplan.kr</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="parking-wrap">
+                                                <div class="title">주차안내</div>
+                                                <div class="content">
+                                                    건물 내 지하주차장 이용
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="item">
+                                        <div class="map-div">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.6252689500384!2d129.12979967592463!3d35.16596527275799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356892c796ffda13%3A0xe97d24f278635b12!2z67aA7IKw6rSR7Jet7IucIO2VtOyatOuMgOq1rCBBUEVD66GcIDE3!5e0!3m2!1sko!2skr!4v1769500542669!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                        <div class="content-div">
+                                            <div class="map-title">부산사무소</div>
+                                            <div class="address">
+                                                부산광역시 해운대구 apec로 17, 센텀리더스마크 3702호<br>
+                                                (센텀시티역 11번 출구에서 366m)
+                                            </div>
+                                            <div class="info-wrap">
+                                                <div class="title">연락처</div>
+                                                <div class="info-div">
+                                                    <div class="list bold">
+                                                        <div class="label">전화번호</div>
+                                                        <div class="content"><a href="tel:051-925-3702">051-925-3702</a></div>
+                                                    </div>
+                                                    <div class="list">
+                                                        <div class="label">팩스번호</div>
+                                                        <div class="content">051-926-3702</div>
+                                                    </div>
+                                                    <div class="list">
+                                                        <div class="label">이메일</div>
+                                                        <div class="content"><span class="underline">ask@goodplan.kr</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="parking-wrap">
+                                                <div class="title">주차안내</div>
+                                                <div class="content">
+                                                    건물 내 주차장 이용
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </main>
+
+                <!-- 푸터 시작 { -->
+                <footer>
+                    <div class="inner">
+                        <div class="box1">
+                            <img src="./img/common/footer-logo.svg" alt="법무법인 굿플랜" class="logo">
+                        </div>
+                        <div class="box2">
+                            <ul class="info-list">
+                                <li>
+                                    <div class="label">전화</div>
+                                    <div class="content">대표번호 : 1800-6490</div>
+                                </li>
+                                <li>
+                                    <div class="label">E-mail</div>
+                                    <div class="content">ask@goodplan.kr</div>
+                                </li>
+                                <li>
+                                    <div class="label">사업자등록번호</div>
+                                    <div class="content">890-87-01999</div>
+                                </li>
+                                <li>
+                                    <div class="label">대표변호사</div>
+                                    <div class="content">오규성, 김가람</div>
+                                </li>
+                                <li>
+                                    <div class="label">광고책임변호사</div>
+                                    <div class="content">김가람</div>
+                                </li>
+                                <li class="full">
+                                    <div class="label">주소</div>
+                                    <div class="half-div">
+                                        <div class="address-wrap">
+                                            <p class="address-list">
+                                                <span class="name">서초 주사무소</span>
+                                                <span class="address">서울특별시 서초구 서초중앙로24길 16, KM타워 5층T : 1800-6490F : 02-525-6489</span>
+                                            </p>
+                                            <p class="address-list">
+                                                <span class="name">수원 분사무소</span>
+                                                <span class="address">경기 수원시 영통구 광교중앙로 256 탑프라자 403호T : 031-213-6489F : 031-213-6488</span>
+                                            </p>
+                                            <p class="address-list">
+                                                <span class="name">목동 분사무소</span>
+                                                <span class="address">서울 양천구 신월로 387, 유앤미법조빌딩 103호ㆍ301호T: 02-2604-6489F: 02-2604-6488</span>
+                                            </p>
+                                            <p class="address-list">
+                                                <span class="name">부산 분사무소</span>
+                                                <span class="address">부산광역시 해운대구 APEC로 17, 센텀리더스마크 3702호T: 051-925-3702F: 051-926-3702</span>
+                                            </p>
+                                            <p class="address-list">
+                                                <span class="name">여주 분사무소</span>
+                                                <span class="address">경기 여주시 현암로 21-10 103호T: 031-884-1007F: 031-688-1057</span>
+                                            </p>
+                                            <p class="address-list">
+                                                <span class="name">천안 분사무소</span>
+                                                <span class="address">충청남도 천안시 동남구 청수14로 68 7층 703, 704호T: 041-555-6489F: 041-555-6490</span>
+                                            </p>
+                                            <p class="address-list">
+                                                <span class="name">청주 분사무소</span>
+                                                <span class="address">충청북도 청주시 서원구 산남로70번길 34, 신성미소시티블루1 504호T: 043-715-2005F: 043-715-2008</span>
+                                            </p>
+                                        </div>
+                                        <div class="copy-right">ⓒ Lawfirm GOODPLAN. All Rights Reserved.</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+                <!-- } 푸터 끝-->
+
+            </article>
+        </main>
+
+
+
+    </body>
+</html>

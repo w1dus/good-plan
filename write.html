@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+      
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <!-- 패럴렉스 -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+        <!-- fullPage.js / css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.js"></script>
+    </head>
+    <body>
+        <!-- 헤더 { -->
+        <header>
+            <div class="inner">
+                <a href="./index.html">
+                    <img src="./img/common/logo.svg" alt="법무법인 굿플랜" class="logo">
+                </a>
+                <button type="button" class="menu-btn">
+                    <img src="./img/common/menu-icon.svg" alt="menu" class="icon">
+                </button>
+            </div>
+        </header>
+        <!-- } 헤더 끝 -->
+        <!-- 우측 슬라이드 메뉴 { -->
+        <section class="slide-menu">
+            <div class="btn-div">
+                <button type="button" class="close-btn">
+                    <img src="./img/common/close-icon.svg" alt="close" class="icon">
+                </button>
+            </div>
+            <div class="menu-div">
+                <div class="title-item"><a href="./sub1_1.html">굿플랜 소개</a></div>
+                <div class="sub-item"><a href="./sub1_1.html">법무법인 소개</a></div>
+                <div class="sub-item"><a href="./sub1_2.html">구성원</a></div>
+                <div class="sub-item"><a href="./sub1_3.html">오시는길</a></div>
+
+                <div class="title-item"><a href="./sub2.html">주요업무</a></div>
+                <div class="sub-item"><a href="./sub2_1.html">형사</a></div>
+                <div class="sub-item"><a href="./sub2_2.html">부동산</a></div>
+                <div class="sub-item"><a href="./sub2_3.html">이혼  · 상속</a></div>
+                <div class="sub-item"><a href="./sub2_4.html">손해배상  · 대여금</a></div>
+                <div class="sub-item"><a href="./sub2_5.html">재개발 · 재건축  </a></div>
+                <div class="sub-item"><a href="./sub2_6.html">회생 · 파산</a></div>
+                <div class="sub-item"><a href="./sub2_7.html">조세 · 행정</a></div>
+                <div class="sub-item"><a href="./sub2_8.html">가상자산</a></div>
+                <div class="sub-item"><a href="./sub2_9.html">자문</a></div>
+
+                <div class="title-item"><a href="./sub3_1.html">커뮤니티</a></div>
+                <div class="sub-item"><a href="./sub3_1.html">성공사례</a></div>
+                <div class="sub-item"><a href="./sub3_2.html">언론보도</a></div>
+                <div class="sub-item"><a href="./sub3_3.html">소식</a></div>
+                <div class="sub-item"><a href="./sub3_4.html">전문 칼럼</a></div>
+
+                <div class="title-item"><a href="./sub4_1.html">상담신청</a></div>
+                <div class="sub-item"><a href="./sub4_1.html">상담신청</a></div>
+            </div>
+        </section>
+        <!-- } 우측 슬라이드 메뉴-->
+        
+        <main id="smooth-wrapper">
+            <article id="smooth-content">
+                
+
+                <main class="sub board-view sec_top">
+                    <section class="boardArti boardWriteArti">
+                        <div class="inner">
+                            
+                            <article class="infoBoxWrap">
+                                <ul class="infoBoxList">
+                                    <li class="full">
+                                        <div class="infoBox">
+                                            <div class="label">분류</div>
+                                            <div class="txtBox">
+                                                <select class="ipt">
+                                                    <option value="">분류를 선택하세요</option>
+                                                    <option value="">분류를 선택하세요</option>
+                                                    <option value="">분류를 선택하세요</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="half">
+                                        <div class="infoBox">
+                                            <div class="label">이름</div>
+                                            <div class="txtBox"><input type="text" name="" value="" placeholder="이름" class="ipt" /></div>
+                                        </div>
+                                    </li>
+                                    <li class="half">
+                                        <div class="infoBox">
+                                            <div class="label">비밀번호</div>
+                                            <div class="txtBox"><input type="password" name="" value="" placeholder="이름" class="ipt" /></div>
+                                        </div>
+                                    </li>
+                                    <li class="half">
+                                        <div class="infoBox">
+                                            <div class="label">이메일</div>
+                                            <div class="txtBox"><input type="email" name="" value="" placeholder="이메일" class="ipt" /></div>
+                                        </div>
+                                    </li>
+                                    <li class="half">
+                                        <div class="infoBox">
+                                            <div class="label">홈페이지</div>
+                                            <div class="txtBox"><input type="homepage" name="" value="" placeholder="홈페이지" class="ipt" /></div>
+                                        </div>
+                                    </li>
+                                    <li class="full">
+                                        <div class="infoBox">
+                                            <div class="label">설정</div>
+                                            <div class="txtBox">
+                                                <select class="ipt">
+                                                    <option value="">분류를 선택하세요</option>
+                                                    <option value="">분류를 선택하세요</option>
+                                                    <option value="">분류를 선택하세요</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="full">
+                                        <div class="infoBox">
+                                            <div class="label">제목</div>
+                                            <div class="txtBox">
+                                                <input type="text" name="" value="" placeholder="제목" class="ipt" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </article>
+            
+                            <article class="dhtmlBox">
+                                dhtml을 넣어주세요.
+                            </article>
+            
+                            <article class="addArti">
+                                <div class="addWrap">
+                                    <div class="tag"># 링크 1</div>
+                                    <input type="url" class="ipt link" placeholder="링크를 입력해주세요" />
+                                </div>
+                                <div class="addWrap">
+                                    <div class="tag"># 링크 2</div>
+                                    <input type="url" class="ipt link" placeholder="링크를 입력해주세요" />
+                                </div>
+            
+                                <div class="addWrap">
+                                    <div class="tag"># 파일 1</div>
+                                    <input type="file" class="ipt file" placeholder="링크를 입력해주세요" />
+                                    <label class="delBox">
+                                        <input type="checkbox"/>
+                                        <p>file.jpg(11.4K) 파일삭제</p>
+                                    </label>
+                                </div>
+                                <div class="addWrap">
+                                    <div class="tag"># 파일 2</div>
+                                    <input type="file" class="ipt file" placeholder="링크를 입력해주세요" />
+                                    <label class="delBox">
+                                        <input type="checkbox"/>
+                                        <p>file.jpg(11.4K) 파일삭제</p>
+                                    </label>
+                                </div>
+            
+                            </article>
+            
+                            <article class="btnWrap">
+                                <a href="./basicList.html" class="cancel boardBtn">취소</a>
+                                <button type="button" class="submit boardBtn">작성완료</button>
+                            </article>
+                            
+                        </div>
+                    </section>
+                </main>
+
+                <!-- 푸터 시작 { -->
+                <footer>
+                    <div class="inner">
+                        <div class="box1">
+                            <img src="./img/common/footer-logo.svg" alt="법무법인 굿플랜" class="logo">
+                        </div>
+                        <div class="box2">
+                            <ul class="info-list">
+                                <li>
+                                    <div class="label">전화</div>
+                                    <div class="content">대표번호 : 1800-6490</div>
+                                </li>
+                                <li>
+                                    <div class="label">E-mail</div>
+                                    <div class="content">ask@goodplan.kr</div>
+                                </li>
+                                <li>
+                                    <div class="label">사업자등록번호</div>
+                                    <div class="content">890-87-01999</div>
+                                </li>
+                                <li>
+                                    <div class="label">대표변호사</div>
+                                    <div class="content">오규성, 김가람</div>
+                                </li>
+                                <li>
+                                    <div class="label">광고책임변호사</div>
+                                    <div class="content">김가람</div>
+                                </li>
+                                <li class="full">
+                                    <div class="label">주소</div>
+                                    <div class="half-div">
+                                        <div class="address-wrap">
+                                            <p class="address-list">
+                                                <span class="name">서초 주사무소</span>
+                                                <span class="address">서울특별시 서초구 서초중앙로24길 16, KM타워 5층T : 1800-6490F : 02-525-6489</span>
+                                            </p>
+                                            <p class="address-list">
+                                                <span class="name">수원 분사무소</span>
+                                                <span class="address">경기 수원시 영통구 광교중앙로 256 탑프라자 403호T : 031-213-6489F : 031-213-6488</span>
+                                            </p>
+                                            <p class="address-list">
+                                                <span class="name">목동 분사무소</span>
+                                                <span class="address">서울 양천구 신월로 387, 유앤미법조빌딩 103호ㆍ301호T: 02-2604-6489F: 02-2604-6488</span>
+                                            </p>
+                                            <p class="address-list">
+                                                <span class="name">부산 분사무소</span>
+                                                <span class="address">부산광역시 해운대구 APEC로 17, 센텀리더스마크 3702호T: 051-925-3702F: 051-926-3702</span>
+                                            </p>
+                                            <p class="address-list">
+                                                <span class="name">여주 분사무소</span>
+                                                <span class="address">경기 여주시 현암로 21-10 103호T: 031-884-1007F: 031-688-1057</span>
+                                            </p>
+                                            <p class="address-list">
+                                                <span class="name">천안 분사무소</span>
+                                                <span class="address">충청남도 천안시 동남구 청수14로 68 7층 703, 704호T: 041-555-6489F: 041-555-6490</span>
+                                            </p>
+                                            <p class="address-list">
+                                                <span class="name">청주 분사무소</span>
+                                                <span class="address">충청북도 청주시 서원구 산남로70번길 34, 신성미소시티블루1 504호T: 043-715-2005F: 043-715-2008</span>
+                                            </p>
+                                        </div>
+                                        <div class="copy-right">ⓒ Lawfirm GOODPLAN. All Rights Reserved.</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+                <!-- } 푸터 끝-->
+
+            </article>
+        </main>
+
+
+
+    </body>
+</html>

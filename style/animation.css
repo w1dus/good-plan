@@ -2,6 +2,73 @@
 /* animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; */
 
 
+
+
+
+.main .section1 h1{ opacity: 0; }
+.main .section1.on h1{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+.main .section1 .scroll-div{ animation: bounce 2s ease-in-out 0s infinite; }
+
+.main .section2 h2{ opacity: 0; }
+.main .section2.on h2{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+.main .section2 .content{ opacity: 0; }
+.main .section2.on .content{ animation: fadeIn 0.5s ease-in-out 0.1s 1 forwards running; }
+.main .section2 .more-btn-wrap{ opacity: 0; }
+.main .section2.on .more-btn-wrap{ animation: fadeIn 0.5s ease-in-out 0.2s 1 forwards running; }
+
+.main .section3 h2{ opacity: 0; }
+.main .section3.on h2{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+.main .section3 .slide-wrap{ opacity: 0; }
+.main .section3.on .slide-wrap{ animation: fadeIn 0.5s ease-in-out 0.1s 1 forwards running; }
+
+.main .section4 h2{ opacity: 0; }
+.main .section4.on h2{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+.main .section4 .success-tag-list{ opacity: 0; }
+.main .section4.on .success-tag-list{ animation: fadeIn 0.5s ease-in-out 0.1s 1 forwards running; }
+.main .section4 .success-list{ opacity: 0; }
+.main .section4.on .success-list{ animation: fadeIn 0.5s ease-in-out 0.2s 1 forwards running; }
+.main .section4 .center-btn-div{ opacity: 0; }
+.main .section4.on .center-btn-div{ animation: fadeIn 0.5s ease-in-out 0.3s 1 forwards running; }
+
+
+.main .section5 h2{ opacity: 0; }
+.main .section5.on h2{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+.main .section5 .slide-wrap{ opacity: 0; }
+.main .section5.on .slide-wrap{ animation: fadeIn 0.5s ease-in-out 0.1s 1 forwards running; }
+
+
+
+.apply-section .left-box h2{ opacity: 0; }
+.apply-section.on .left-box h2{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+.apply-section .content{ opacity: 0; }
+.apply-section.on .content{ animation: fadeIn 0.5s ease-in-out 0.1s 1 forwards running; }
+.apply-section .right-box .form-div{ opacity: 0; }
+.apply-section.on .right-box .form-div{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+.sub .sub-banner-section .bar{ opacity: 0; animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+.sub .sub-banner-section h1{ opacity: 0; animation: fadeIn 0.5s ease-in-out 0.1s 1 forwards running; }
+.sub .sub-banner-section .en{ opacity: 0; animation: fadeIn 0.5s ease-in-out 0.2s 1 forwards running;}
+
+.sub1_1 .section1 .sub-title-div{ opacity: 0; }
+.sub1_1 .section1.on .sub-title-div{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+.sub1_1 .section1 .number-box{ opacity: 0; }
+.sub1_1 .section1.on .number-box{ animation: fadeIn 0.5s ease-in-out 0.1s 1 forwards running; }
+
+.sub1_1 .section2 .sub-title-div{ opacity: 0; }
+.sub1_1 .section2 .sub-title-div.on{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+.sub1_1 .section2 .half-div{ opacity: 0; }
+.sub1_1 .section2 .half-div.on{ animation: fadeIn 0.5s ease-in-out 0.1s 1 forwards running; }
+
+.sub1_1 .section3 .center-box{ opacity: 0; }
+.sub1_1 .section3.on .center-box{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+
+@keyframes bounce {
+    0%   { transform: translateY(0); opacity: 0.6; }
+    50%  { transform: translateY(10px); opacity: 1; }
+    100% { transform: translateY(0); opacity: 0.6; }
+}
 @keyframes fadeIn {
     0% {transform: translate3d(0px, 30px, 0px); }
     100% { opacity: 1; transform: translate3d(0px, 0px, 0px); }

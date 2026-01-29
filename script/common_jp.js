@@ -79,7 +79,7 @@ const animationOnHandler = () => {
                 }
             });
         }, {
-            threshold: 0.5 // Adjust threshold as needed
+            threshold: 0.1 // Adjust threshold as needed
         });
         
         // Observe each .ani element
